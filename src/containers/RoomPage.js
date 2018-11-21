@@ -22,7 +22,12 @@ class RoomPage extends Component {
   render() {
     return (
       <div>
-        <div className="topic" />
+        <div className="topic">
+          <p>
+            Topic: Using CRISPR Cas9 Gene Drive to eradicate mosquitoes from the
+            world.
+          </p>
+        </div>
         <MediaContainer
           media={media => (this.media = media)}
           socket={this.socket}

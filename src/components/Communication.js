@@ -104,7 +104,7 @@ const Communication = props => (
           data-ref="message"
           maxLength="30"
           required
-          placeholder="I would like to debate you on this.."
+          placeholder="I would like to debate you on this..."
         />
         <button className="primary-button">Send</button>
       </form>
@@ -137,6 +137,7 @@ const Communication = props => (
       <p>
         <span>Waiting for someone to join this debate:&nbsp;</span>
         <a href={window.location.href}>{window.location.href}</a>
+        <br />
         <br />
         <span className="remote-left">The other side hung up.</span>
       </p>
