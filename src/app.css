@@ -116,6 +116,22 @@ input[type="text"] {
   color: #4285f4;
   margin: 1ex 1em;
 }
+
+.remote-video-container {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+}
+
+.local-video-container {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+}
 .remote-video {
   display: block;
   max-height: 100%;
