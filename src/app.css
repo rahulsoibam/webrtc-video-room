@@ -117,6 +117,15 @@ input[type="text"] {
   margin: 1ex 1em;
 }
 
+.topic {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  opacity: 0.5;
+  background: #000000;
+  z-index: 99999;
+}
+
 .remote-video-container {
   position: absolute;
   right: 0;
@@ -125,7 +134,7 @@ input[type="text"] {
   overflow: hidden;
 }
 
-.local-video-container {
+.established .local-video-container {
   position: absolute;
   left: 0;
   height: 100vh;

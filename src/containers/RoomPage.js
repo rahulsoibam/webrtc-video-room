@@ -19,6 +19,8 @@ class RoomPage extends Component {
   }
   render(){
     return (
+      <div className="topic">
+      </div>
       <div>
         <MediaContainer media={media => this.media = media} socket={this.socket} getUserMedia={this.getUserMedia} />
         <CommunicationContainer socket={this.socket} media={this.media} getUserMedia={this.getUserMedia} />
