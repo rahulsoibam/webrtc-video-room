@@ -6,12 +6,11 @@ import { Link } from 'react-router-dom';
 const Home = props =>
   <div className="home">
     <div>
-      <h1 itemProp="headline">Webrtc Video Room</h1>
-      <p>Please enter a room name.</p>
-      <input type="text" name="room" value={ props.roomId } onChange={props.handleChange} pattern="^\w+$" maxLength="10" required autoFocus title="Room name should only contain letters or numbers."/>
-      <Link className="primary-button" to={ '/r/' + props.roomId }>Join</Link>
-      <Link className="primary-button" to={ '/r/' + props.defaultRoomId }>Random</Link>
-      { props.rooms.length !== 0 && <div>Recently used rooms:</div> }
+      <h1 itemProp="headline">Koubru First Demo</h1>
+      <p>Please specify a topic to start the debate.</p>
+      <input type="text" name="room" value={ props.roomId } onChange={props.handleChange} pattern="^\w+$" maxLength="255" required autoFocus title="Room name should only contain letters or numbers."/>
+      <Link className="primary-button" to={ '/r/' + props.roomId }>Create/Join Topic</Link>
+      { props.rooms.length !== 0 && <div>Recently created topics:</div> }
       { props.rooms.map(room => <Link key={room} className="recent-room" to={ '/r/' + room }>{ room }</Link>) }
     </div>
   </div>;
