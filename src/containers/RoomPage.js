@@ -23,7 +23,7 @@ class RoomPage extends Component {
     return (
       <div>
         <div className="topic">
-          <p>Topic: {this.props.location.pathname}.</p>
+          <p>Topic: substr{this.props.location.pathname.substring(3)}.</p>
         </div>
         <MediaContainer
           media={media => (this.media = media)}
