@@ -23,10 +23,7 @@ class RoomPage extends Component {
     return (
       <div>
         <div className="topic">
-          <p>
-            Topic: Using CRISPR Cas9 Gene Drive to eradicate mosquitoes from the
-            world.
-          </p>
+          <p>Topic: {this.props.location.pathname}.</p>
         </div>
         <MediaContainer
           media={media => (this.media = media)}
