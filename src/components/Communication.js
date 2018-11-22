@@ -135,7 +135,8 @@ const Communication = props => (
     </div>
     <div className="waiting">
       <p>
-        <span>Waiting for someone to join this debate:&nbsp;</span>
+        <span>Waiting for someone to join this debate</span>
+        <br />
         <a href={window.location.href}>{window.location.href}</a>
         <br />
         <br />
